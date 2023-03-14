@@ -1,7 +1,13 @@
+using ApplicationCore.Contracts.Services;
+using Infrastructure.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<IJobService, JobsMongoDbService>();
+
+// Ninject and autofac
 
 var app = builder.Build();
 
