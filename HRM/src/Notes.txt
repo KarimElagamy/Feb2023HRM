@@ -49,4 +49,7 @@ data access code simpler and write less amount of code
  Step 9 : Always, check your migration file and see if it has things that you are trying to create.
  Step 10 :Apply the migration using command
            dotnet ef database update
+ Step 11 : To Model your database with rules, constraints etc we cam do in two ways
+            1. Data Annotations
+            2. Fluent API 
 

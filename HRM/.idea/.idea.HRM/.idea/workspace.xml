@@ -8,18 +8,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58769068-dba8-4e51-a17b-007392ddff81" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Recruiting/ApplicationCore/Entities/Job.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Recruiting/Infrastructure/Data/RecruitingDbContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Recruiting/Infrastructure/Migrations/20230315192414_InitialMigration.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Recruiting/Infrastructure/Migrations/20230315192414_InitialMigration.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Recruiting/Infrastructure/Migrations/RecruitingDbContextModelSnapshot.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HRM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HRM/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Notes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Recruiting/ApplicationCore/ApplicationCore.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Recruiting/ApplicationCore/ApplicationCore.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Recruiting/Infrastructure/Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Recruiting/Infrastructure/Infrastructure.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Recruiting/RecruitingWeb/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Recruiting/RecruitingWeb/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Recruiting/RecruitingWeb/RecruitingWeb.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Recruiting/RecruitingWeb/RecruitingWeb.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Recruiting/RecruitingWeb/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Recruiting/RecruitingWeb/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Recruiting/ApplicationCore/Entities/Job.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Recruiting/ApplicationCore/Entities/Job.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Recruiting/Infrastructure/Migrations/RecruitingDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Recruiting/Infrastructure/Migrations/RecruitingDbContextModelSnapshot.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +123,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678816473142</updated>
-      <workItem from="1678816474187" duration="13723000" />
+      <workItem from="1678816474187" duration="14521000" />
     </task>
     <servers />
   </component>
