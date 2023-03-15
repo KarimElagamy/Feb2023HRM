@@ -1,11 +1,18 @@
 using ApplicationCore.Contracts.Services;
+using Infrastructure.Data;
 using Infrastructure.Services;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IJobService, JobsMongoDbService>();
+
+// Inject our ConnectionString into DbContext
+builder.Services.AddDbContext<RecruitingDbContext>(
+    options => options.UseSqlServer(builder.Configuration.GetConnectionString("RecruitingDbConnection"))
+);
 
 // Ninject and autofac
 
@@ -27,7 +34,7 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    "default",
+    "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();

@@ -8,17 +8,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58769068-dba8-4e51-a17b-007392ddff81" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.HRM/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Notes.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Recruiting/ApplicationCore/Models/JobResponseModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Recruiting/Infrastructure/Services/JobService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Recruiting/Infrastructure/Services/JobsMongoDbService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Recruiting/RecruitingWeb/Controllers/JobsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HRM.sln" beforeDir="false" afterPath="$PROJECT_DIR$/HRM.sln" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Recruiting/ApplicationCore/Entities/Job.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Recruiting/Infrastructure/Data/RecruitingDbContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Recruiting/Infrastructure/Migrations/20230315192414_InitialMigration.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Recruiting/Infrastructure/Migrations/20230315192414_InitialMigration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Recruiting/Infrastructure/Migrations/RecruitingDbContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.HRM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HRM/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Notes.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Recruiting/ApplicationCore/ApplicationCore.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Recruiting/ApplicationCore/ApplicationCore.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Recruiting/ApplicationCore/Contracts/Services/IJobService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Recruiting/ApplicationCore/Contracts/Services/IJobService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Recruiting/Infrastructure/Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Recruiting/Infrastructure/Infrastructure.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Recruiting/RecruitingWeb/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Recruiting/RecruitingWeb/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Recruiting/RecruitingWeb/RecruitingWeb.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Recruiting/RecruitingWeb/RecruitingWeb.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Recruiting/RecruitingWeb/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Recruiting/RecruitingWeb/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +28,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/01f68086a1cc42f08bf5eee3cd0d34cd224000/c3/26c18a1e/ControllerFactoryProvider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d32068398f924dd8adc4e18c2edbb6c01fc798/75/770ff9c6/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -48,6 +50,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -128,7 +131,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678816473142</updated>
-      <workItem from="1678816474187" duration="8248000" />
+      <workItem from="1678816474187" duration="13723000" />
     </task>
     <servers />
   </component>
