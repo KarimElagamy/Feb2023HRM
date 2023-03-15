@@ -21,4 +21,9 @@ public class Job
     [MaxLength(1024)]
     public string? ClosedReason { get; set; }
     public DateTime? CreatedOn { get; set; }
+
+    public int JobStatusLookUpId { get; set; }
+    
+    // Navigation property in EF
+    public JobStatusLookUp JobStatusLookUp { get; set; }
 }

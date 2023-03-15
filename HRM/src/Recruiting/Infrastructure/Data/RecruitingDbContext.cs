@@ -10,7 +10,9 @@ public class RecruitingDbContext: DbContext
         
     }
     
-    // DbSets are properties of DbContex
+    // DbSets are properties of DbContext
 
     public DbSet<Job> Jobs { get; set; }
+    public DbSet<Candidate> Candidates { get; set; }
+    public DbSet<JobStatusLookUp> JobStatusLookUps { get; set; }
 }

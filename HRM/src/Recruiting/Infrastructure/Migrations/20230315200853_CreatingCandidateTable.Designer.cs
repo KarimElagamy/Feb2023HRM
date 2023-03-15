@@ -4,6 +4,7 @@ using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infrastructure.Migrations
 {
     [DbContext(typeof(RecruitingDbContext))]
-    partial class RecruitingDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230315200853_CreatingCandidateTable")]
+    partial class CreatingCandidateTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -87,9 +90,6 @@ namespace Infrastructure.Migrations
                     b.Property<Guid>("JobCode")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<int>("JobStatusLookUpId")
-                        .HasColumnType("int");
-
                     b.Property<int>("NumberOfPositions")
                         .HasColumnType("int");
 
@@ -103,41 +103,7 @@ namespace Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("JobStatusLookUpId");
-
                     b.ToTable("Jobs");
-                });
-
-            modelBuilder.Entity("ApplicationCore.Entities.JobStatusLookUp", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("JobStatusCode")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("JobStatusDescription")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("JobStatusLookUps");
-                });
-
-            modelBuilder.Entity("ApplicationCore.Entities.Job", b =>
-                {
-                    b.HasOne("ApplicationCore.Entities.JobStatusLookUp", "JobStatusLookUp")
-                        .WithMany()
-                        .HasForeignKey("JobStatusLookUpId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("JobStatusLookUp");
                 });
 #pragma warning restore 612, 618
         }
