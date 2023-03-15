@@ -26,7 +26,7 @@ data access code simpler and write less amount of code
  
  Jobs => Jobs info  Id, Title, Desc, JobCode
  Candidate => Candidates
- Submissions => When candidates apply for the job
+ Submissions => When candidates apply for the job Id, [CandidateId & JobId] => Unique constraint 
  JobStatusLookUp => Open, Closed, pending closed, postponed
   
  Step 1 : Install EF Core tools package globally

@@ -20,4 +20,8 @@ public class Candidate
     
     [MaxLength(2048)]
     public string? ResumeURL { get; set; }
+
+    public DateTime CreatedOn { get; set; }
+
+    public List<Submission> Submissions { get; set; }
 }
