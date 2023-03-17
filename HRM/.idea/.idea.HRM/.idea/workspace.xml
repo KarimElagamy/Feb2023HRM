@@ -8,17 +8,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58769068-dba8-4e51-a17b-007392ddff81" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Recruiting/ApplicationCore/Models/JobRequestModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Recruiting/Infrastructure/Repositories/JobRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Recruiting/RecruitingWeb/Views/jobs/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HRM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HRM/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Notes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Recruiting/ApplicationCore/Contracts/Repositories/IBaseRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Recruiting/ApplicationCore/Contracts/Repositories/IBaseRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Recruiting/ApplicationCore/Contracts/Repositories/IJobRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Recruiting/ApplicationCore/Contracts/Repositories/IJobRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Recruiting/ApplicationCore/Models/JobResponseModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Recruiting/ApplicationCore/Models/JobResponseModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Recruiting/ApplicationCore/Contracts/Services/IJobService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Recruiting/ApplicationCore/Contracts/Services/IJobService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Recruiting/Infrastructure/Repositories/JobRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Recruiting/Infrastructure/Repositories/JobRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Recruiting/Infrastructure/Services/JobService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Recruiting/Infrastructure/Services/JobService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Recruiting/Infrastructure/Services/JobsMongoDbService.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Recruiting/RecruitingWeb/Controllers/JobsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Recruiting/RecruitingWeb/Controllers/JobsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Recruiting/RecruitingWeb/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Recruiting/RecruitingWeb/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Recruiting/RecruitingWeb/Views/Jobs/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Recruiting/RecruitingWeb/Views/Jobs/Index.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +128,7 @@
       <option name="presentableId" value="Default" />
       <updated>1678816473142</updated>
       <workItem from="1678816474187" duration="21235000" />
-      <workItem from="1679067012105" duration="7198000" />
+      <workItem from="1679067012105" duration="8437000" />
     </task>
     <servers />
   </component>
@@ -147,56 +144,43 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Recruiting/Infrastructure/Services/JobsMongoDbService.cs</url>
-          <line>10</line>
-          <properties documentPath="$PROJECT_DIR$/src/Recruiting/Infrastructure/Services/JobsMongoDbService.cs" initialLine="10" containingFunctionPresentation="method 'GetAllJobs'">
-            <startOffsets>
-              <option value="249" />
-            </startOffsets>
-            <endOffsets>
-              <option value="822" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/src/Recruiting/RecruitingWeb/Controllers/JobsController.cs</url>
           <line>19</line>
           <properties documentPath="$PROJECT_DIR$/src/Recruiting/RecruitingWeb/Controllers/JobsController.cs" initialLine="19" containingFunctionPresentation="method 'Index'">
             <startOffsets>
-              <option value="652" />
+              <option value="665" />
             </startOffsets>
             <endOffsets>
-              <option value="653" />
+              <option value="666" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Recruiting/Infrastructure/Services/JobService.cs</url>
-          <line>17</line>
-          <properties documentPath="$PROJECT_DIR$/src/Recruiting/Infrastructure/Services/JobService.cs" initialLine="17" containingFunctionPresentation="method 'GetAllJobs'">
-            <startOffsets>
-              <option value="414" />
-            </startOffsets>
-            <endOffsets>
-              <option value="453" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/src/Recruiting/Infrastructure/Repositories/JobRepository.cs</url>
           <line>16</line>
           <properties documentPath="$PROJECT_DIR$/src/Recruiting/Infrastructure/Repositories/JobRepository.cs" initialLine="16" containingFunctionPresentation="method 'GetAllJobs'">
             <startOffsets>
-              <option value="415" />
+              <option value="429" />
             </startOffsets>
             <endOffsets>
-              <option value="416" />
+              <option value="430" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/Recruiting/RecruitingWeb/Controllers/JobsController.cs</url>
+          <line>45</line>
+          <properties documentPath="$PROJECT_DIR$/src/Recruiting/RecruitingWeb/Controllers/JobsController.cs" initialLine="45" containingFunctionPresentation="method 'Details'">
+            <startOffsets>
+              <option value="1700" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1743" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -13,9 +13,9 @@ public class JobService : IJobService
         _jobRepository = jobRepository;
     }
 
-    public List<JobResponseModel> GetAllJobs()
+    public async  Task< List<JobResponseModel>> GetAllJobs()
     {
-        var jobs = _jobRepository.GetAllJobs();
+        var jobs = await _jobRepository.GetAllJobs();
 
         var jobsResponseModel = new List<JobResponseModel>();
 
@@ -29,9 +29,13 @@ public class JobService : IJobService
         return jobsResponseModel;
     }
 
-    public JobResponseModel GetJobById(int id)
+    public async  Task< JobResponseModel> GetJobById(int id)
     {
-        return new JobResponseModel
-            { Id = 4, Title = "JavaScript Developer", Description = "Need to be good JavaScript" };
+        var job = await _jobRepository.GetJobById(id);
+        var jobResponseModel = new JobResponseModel
+        {
+            Id = job.Id, Title = job.Title, StartDate = job.StartDate.GetValueOrDefault(), Description = job.Description
+        };
+        return jobResponseModel;
     }
 }

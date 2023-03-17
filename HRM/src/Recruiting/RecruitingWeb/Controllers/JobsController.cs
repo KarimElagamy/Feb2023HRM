@@ -16,7 +16,7 @@ namespace RecruitingWeb.Controllers
         // U1 ->  http://exmple.com/jobs/index 
         // U2, u3, u4....
         // 10:00 AM 300 users accesing your website, 200 are accessing index methods
-        public IActionResult Index()
+        public async Task< IActionResult> Index()
         {
             // we need to get list of Jobs
             // call the Job Service
@@ -35,16 +35,16 @@ namespace RecruitingWeb.Controllers
            // network, location , database disk SSD, hard drive, SQL slow or fast , might be not optimized
            // waiting 
            //  prevent Thread starvation
-            var jobs = _jobService.GetAllJobs();
+            var jobs = await _jobService.GetAllJobs();
             return View(jobs);
         }
 
-        public IActionResult Details(int id)
+        public async  Task< IActionResult> Details(int id)
         {
             // get job by Id
           
-            var job = _jobService.GetJobById(id);
-            return View();
+            var job = await _jobService.GetJobById(id);
+            return View(job);
         }
 
         public IActionResult Create()

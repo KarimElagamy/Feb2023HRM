@@ -13,11 +13,18 @@ public class JobRepository: IJobRepository
         _dbContext = dbContext;
     }
     
-    public List<Job> GetAllJobs()
+    public async  Task< List<Job>> GetAllJobs()
     {
         // go to the database and get the data
         // EF Core with LINQ 
-        var jobs = _dbContext.Jobs.ToList();
+        var jobs = await _dbContext.Jobs.ToListAsync();
         return jobs;
+    }
+
+    public async Task<Job> GetJobById(int id)
+    {
+        var job = await _dbContext.Jobs.FirstOrDefaultAsync(j => j.Id == id);
+        return job;
+
     }
 }

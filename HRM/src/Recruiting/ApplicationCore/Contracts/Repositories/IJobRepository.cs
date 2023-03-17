@@ -1,9 +1,10 @@
 ﻿using ApplicationCore.Entities;
 
-namespace ApplicationCore.Contracts.Repositories
+namespace ApplicationCore.Contracts.Repositories;
+
+public interface IJobRepository
 {
-    public interface IJobRepository
-    {
-        List<Job> GetAllJobs();
-    }
+    Task<List<Job>> GetAllJobs();
+
+    Task<Job> GetJobById(int id);
 }
