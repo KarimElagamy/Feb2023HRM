@@ -1,7 +1,9 @@
-﻿namespace ApplicationCore.Contracts.Repositories
+﻿using ApplicationCore.Entities;
+
+namespace ApplicationCore.Contracts.Repositories
 {
-    public interface IJobRepository 
+    public interface IJobRepository
     {
-      
+        List<Job> GetAllJobs();
     }
 }

@@ -52,4 +52,28 @@ data access code simpler and write less amount of code
  Step 11 : To Model your database with rules, constraints etc we cam do in two ways
             1. Data Annotations
             2. Fluent API 
+            
+            
+  asynchorous programming -> 2002
+  async/await -> 2012  older .net framework 4.5
+  
+  
+  
+  
+  T1
+   public async  Task< IActionResult> Index()
+          {
+             
+             var x = 10;
+             // database
+             // I/O bound -> go to this URL and fetch me some data/image network, file download
+             // database calls
+             // theradpool
+            
+             // waiting 
+             //  prevent Thread starvation
+              var jobs = await _jobService.GetAllJobs(); -> returning task
+              return View();
+              // therad starvation, scalability of our application
+          }
 
