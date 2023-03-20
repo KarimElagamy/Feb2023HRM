@@ -80,3 +80,34 @@ data access code simpler and write less amount of code
 To do validations we use Dataannotations
 
 IRepository<Candidate> -> BaseRepository<Candidate>
+
+Middleware ->  Request  that will request will go thru series of code and they will return back in reverse order
+
+
+R -> M1 (check the user is authenticated, check the http header and maybe read some http info)
+     M2 (some logic)
+     M3
+     
+ 
+Response
+ 
+ Built-in Middlewares
+ Custom middlewares
+ Register them in proper order
+ 
+ 
+ Home Page list all the Jobs -> foe each and every job you should give option (link) to see submissions for the job
+ 
+ Click on Job Title should go to Jobs/Details -> Apply button (POST) to Submissions table
+    Candidate FirstName, LastName, Email (show Job Code and Title)
+    When saving the submission check if the an submission already exists for that email
+ Create New Jon button on Jobs list Page 
+    Create New Job should be using Validations and also should have dropdown (research) for JobStatus
+    Create New Job and Save to Database
+ 
+ 
+ 
+ 
+ 
+
+

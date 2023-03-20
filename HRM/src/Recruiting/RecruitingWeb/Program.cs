@@ -4,6 +4,7 @@ using Infrastructure.Data;
 using Infrastructure.Repositories;
 using Infrastructure.Services;
 using Microsoft.EntityFrameworkCore;
+using RecruitingWeb.Infra;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -28,6 +29,14 @@ if (!app.Environment.IsDevelopment())
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
+
+/*if (app.Environment.IsDevelopment())
+{
+    app.UseExceptionHandler("Home/DevException");
+
+}*/
+
+app.UseRecruitingMiddleware();
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
