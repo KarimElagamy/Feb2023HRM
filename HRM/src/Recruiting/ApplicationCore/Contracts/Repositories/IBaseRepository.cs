@@ -8,8 +8,8 @@ namespace ApplicationCore.Contracts.Repositories
         // IEnumerable<T> GetAll();
         Task<T> GetByIdAsync(int id);
         Task<bool> GetExistsAsync(Expression<Func<T, bool>>? filter = null);
-        Task<int> AddtAsync(T entity);
-        Task<int> UpdateAsync(T entity);
+        Task<T> AddAsync(T entity);
+        Task<T> UpdateAsync(T entity);
         Task<int> DeleteAsync(int id);
 
     }

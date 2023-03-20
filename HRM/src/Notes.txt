@@ -77,3 +77,6 @@ data access code simpler and write less amount of code
               // therad starvation, scalability of our application
           }
 
+To do validations we use Dataannotations
+
+IRepository<Candidate> -> BaseRepository<Candidate>

@@ -5,15 +5,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Repositories;
 
-public class JobRepository: IJobRepository
+public class JobRepository : BaseRepository<Job>, IJobRepository
 {
-    private RecruitingDbContext _dbContext;
-    public JobRepository(RecruitingDbContext dbContext)
+    public JobRepository(RecruitingDbContext dbContext) : base(dbContext)
     {
-        _dbContext = dbContext;
     }
-    
-    public async  Task< List<Job>> GetAllJobs()
+
+    public async Task<List<Job>> GetAllJobs()
     {
         // go to the database and get the data
         // EF Core with LINQ 
@@ -25,6 +23,5 @@ public class JobRepository: IJobRepository
     {
         var job = await _dbContext.Jobs.FirstOrDefaultAsync(j => j.Id == id);
         return job;
-
     }
 }
