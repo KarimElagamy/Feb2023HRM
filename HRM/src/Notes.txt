@@ -106,7 +106,31 @@ Response
     Create New Job and Save to Database
  
  
- 
+REST API
+
+Company ABC
+
+Apply for the Jobs ->
+.NET Team Web APP using MVC C#, SQL Server Database
+
+Create an API (REST, Http), old API Web Services SOAP
+
+number of endpoints -> based on HTTP verbs GET, POST PUT DELETE
+
+GET http://recruting.com/api/jobs -> List of Jobs sorted by Created date
+GET http://recruting.com/api/jobs/1 -> Details of the Job
+POST http://recruting.com/api/jobs -> Admin will create a new Job
+
+POST http://recruting.com/api/submissions -> Apply for the Job by candidate
+GET http://recruting.com/api/submissions/jobs/1 -> Get all the submissions for a particular Job
+
+Provide a proper Documentation
+Swagger
+
+Mobile Team
+iOS (Swift) and Android(Java) app ->
+list of jobs => call the Recruiting API end point
+GET http://recruting.com/api/jobs ->
  
  
 
