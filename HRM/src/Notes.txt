@@ -132,6 +132,37 @@ iOS (Swift) and Android(Java) app ->
 list of jobs => call the Recruiting API end point
 GET http://recruting.com/api/jobs ->
  
+
+ 
+ // Authenticated and also some roles -> HR, Admin,
+ 1. Admins can create jobs and can see the submissions 
+ 2. Admins can close a job
+ 3. Admins can schedule an interview
+ 4. Admins can create OnBoarding process, creating employees, editing employee details
+ 
+ 5. Employees should be able to see their info only when they log in
+ 6. Candidates can see only their submissions
+ 
+ 7. Interviewers can see what interviews they need to do
+ 
+ // public information
+ 8. List of jobs, searching for Jobs, Job details
+ 
+ 
+ We should be able to create accounts
+ 
+ Register in to your application
+ 
+ User -> Id, FirstName, LastName, password, email, salt, createdDate
+ 
+ Encryption -> CC, SSN, PI, Health, Security answers
+ 
+ Hashing the password with Salt
+ 
+ U1 -> test@test.com (abc123!!+ abdkjandkjn) HashinAlg1 -> skfbkjdsfkj6f9sa7f907s
+ U2 -> test2@tes.com (abc123!!+ sfcsldfsal)  HashinAlg1 -> kdihvgsfhsdjnfsjflslnmfs
  
 
+Login -> test@test.com (abc1231!!+abdkjandkjn) HashinAlg1 -> vgsfsdfsdfdsfsdfsf
 
+ASP.NET Core Identity + EF Core -> SQL Server
