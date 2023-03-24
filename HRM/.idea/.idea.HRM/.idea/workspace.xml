@@ -12,18 +12,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58769068-dba8-4e51-a17b-007392ddff81" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Authentication/Authentication.API/Authentication.API.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Authentication/Authentication.API/Data/AuthenticationDbContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Authentication/Authentication.API/Entities/Role.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Authentication/Authentication.API/Entities/User.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Authentication/Authentication.API/Entities/UserRole.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Authentication/Authentication.API/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Authentication/Authentication.API/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Authentication/Authentication.API/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Authentication/Authentication.API/appsettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Authentication/Authentication.API/Controllers/AccountController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Authentication/Authentication.API/Migrations/20230324161535_InitialMigration.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Authentication/Authentication.API/Migrations/20230324161535_InitialMigration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Authentication/Authentication.API/Migrations/AuthenticationDbContextModelSnapshot.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Authentication/Authentication.API/Models/LoginModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Authentication/Authentication.API/Models/RegisterModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HRM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HRM/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HRM.sln" beforeDir="false" afterPath="$PROJECT_DIR$/HRM.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Notes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Authentication/Authentication.API/Authentication.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Authentication/Authentication.API/Authentication.API.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +68,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.Recruiting.API: https">
+  <component name="RunManager" selected=".NET Launch Settings Profile.Authentication.API: https">
     <configuration name="ApplicationCore: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Recruiting/ApplicationCore/ApplicationCore.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net7.0" />
@@ -205,7 +201,7 @@
       <workItem from="1678816474187" duration="21235000" />
       <workItem from="1679067012105" duration="9556000" />
       <workItem from="1679334845102" duration="14647000" />
-      <workItem from="1679664318174" duration="4024000" />
+      <workItem from="1679664318174" duration="6792000" />
     </task>
     <servers />
   </component>
@@ -284,6 +280,32 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/Authentication/Authentication.API/Controllers/AccountController.cs</url>
+          <line>26</line>
+          <properties documentPath="$PROJECT_DIR$/src/Authentication/Authentication.API/Controllers/AccountController.cs" initialLine="26" containingFunctionPresentation="method 'Register'">
+            <startOffsets>
+              <option value="749" />
+            </startOffsets>
+            <endOffsets>
+              <option value="937" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/Authentication/Authentication.API/Controllers/AccountController.cs</url>
+          <line>51</line>
+          <properties documentPath="$PROJECT_DIR$/src/Authentication/Authentication.API/Controllers/AccountController.cs" initialLine="51" containingFunctionPresentation="method 'Login'">
+            <startOffsets>
+              <option value="1578" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1638" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
