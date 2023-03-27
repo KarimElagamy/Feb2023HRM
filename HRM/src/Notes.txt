@@ -166,3 +166,27 @@ GET http://recruting.com/api/jobs ->
 Login -> test@test.com (abc1231!!+abdkjandkjn) HashinAlg1 -> vgsfsdfsdfdsfsdfsf
 
 ASP.NET Core Identity + EF Core -> SQL Server
+
+iOS/Android/Web(SPA)
+
+POST -> http://example.com/api/account/login -> email/password 
+        verify the email/password and send the JWT back to the client
+
+SPA (Angular/React) -> localstorage
+
+Interviews
+GET -> http://example.com/api/interviews -> InterviewsController, GetAllInterviews() 
+    
+    JWT (sdfvnblkdsnflkdsjfldsnflkdsnmflksdnfkls) HTTP Header
+    Role of Admin
+    
+    [Authorize]
+    Middleware
+    
+
+POST -> http://example.com/api/interviews
+
+OnBoarding
+GET -> http://example.com/api/employees
+POST -> http://example.com/api/employees
+

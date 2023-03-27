@@ -1,5 +1,6 @@
 namespace ApplicationCore.Entities;
 
+// Hired, Terminated, Pending (from candidate to employee)
 public class EmployeeStatus
 {
     public int Id { get; set; }
