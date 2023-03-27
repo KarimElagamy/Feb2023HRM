@@ -13,6 +13,7 @@ public class Interviewer
     [Required]
     [DataType(DataType.EmailAddress)]
     [EmailAddress]
+    [MaxLength(2048)]
     public string Email { get; set; }
 
     public Guid EmployeeIdentityId { get; set; }

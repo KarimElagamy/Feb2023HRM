@@ -16,32 +16,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58769068-dba8-4e51-a17b-007392ddff81" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Interviews/ApplicationCore/ApplicationCore.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interviews/ApplicationCore/Constants/Rating.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interviews/ApplicationCore/Entities/Interview.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interviews/ApplicationCore/Entities/InterviewTypeLookUp.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interviews/ApplicationCore/Entities/Interviewer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interviews/Infrastructure/Data/InterviewsDbContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interviews/Infrastructure/Infrastructure.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interviews/Infrastructure/Migrations/20230327145918_InitialMigration.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interviews/Infrastructure/Migrations/20230327145918_InitialMigration.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interviews/Infrastructure/Migrations/InterviewsDbContextModelSnapshot.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interviews/Interviews.API/Interviews.API.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interviews/Interviews.API/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interviews/Interviews.API/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interviews/Interviews.API/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interviews/Interviews.API/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/OnBoarding/ApplicationCore/ApplicationCore.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/OnBoarding/ApplicationCore/Entities/Employee.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/OnBoarding/ApplicationCore/Entities/EmployeeStatusLookUp.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/OnBoarding/Infrastructure/Infrastructure.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/OnBoarding/OnBoarding.API/OnBoarding.API.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/OnBoarding/OnBoarding.API/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/OnBoarding/OnBoarding.API/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/OnBoarding/OnBoarding.API/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/OnBoarding/OnBoarding.API/appsettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Recruiting/RecruitingWeb/Views/Jobs/Details.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HRM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HRM/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HRM.sln" beforeDir="false" afterPath="$PROJECT_DIR$/HRM.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interviews/ApplicationCore/Entities/Interview.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interviews/ApplicationCore/Entities/Interview.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interviews/ApplicationCore/Entities/Interviewer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interviews/ApplicationCore/Entities/Interviewer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +40,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectId" id="2N10qhBw2Q7XXK7nCVSMUeQrzfV" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -284,34 +263,40 @@
       <workItem from="1679067012105" duration="9556000" />
       <workItem from="1679334845102" duration="14647000" />
       <workItem from="1679664318174" duration="8436000" />
-      <workItem from="1679927277937" duration="3222000" />
+      <workItem from="1679927277937" duration="4825000" />
     </task>
+    <task id="LOCAL-00001" summary="new code">
+      <created>1679935882328</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679935882328</updated>
+    </task>
+    <task id="LOCAL-00002" summary="New Microservices">
+      <created>1679935916842</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1679935916842</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="new code" />
+    <MESSAGE value="New Microservices" />
+    <option name="LAST_COMMIT_MESSAGE" value="New Microservices" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Recruiting/RecruitingWeb/Controllers/JobsController.cs</url>
-          <line>46</line>
-          <properties documentPath="$PROJECT_DIR$/src/Recruiting/RecruitingWeb/Controllers/JobsController.cs" initialLine="45" containingFunctionPresentation="method 'Details'">
-            <startOffsets>
-              <option value="1730" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1773" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/src/Recruiting/RecruitingWeb/Controllers/JobsController.cs</url>
           <line>60</line>

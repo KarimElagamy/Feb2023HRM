@@ -17,6 +17,7 @@ public class Interview
     
     [Required]
     [DataType(DataType.EmailAddress)]
+    [MaxLength(2048)]
     public string CandidateEmail { get; set; }
     public int SubmissionId { get; set; }
     public DateTime BeginTime { get; set; }
