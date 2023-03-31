@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  recruiting.api:
+    image: ${DOCKER_REGISTRY-}recruiting
+    build:
+      context: .
+      dockerfile: src/Recruiting/Recruiting.API/Dockerfile
+
+  onboarding.api:
+    image: ${DOCKER_REGISTRY-}onboarding
+    build:
+      context: .
+      dockerfile: src/OnBoarding/OnBoarding.API/Dockerfile
+

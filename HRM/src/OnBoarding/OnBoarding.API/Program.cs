@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 var builder = WebApplication.CreateBuilder(args);
+=======
+﻿var builder = WebApplication.CreateBuilder(args);
+>>>>>>> Stashed changes
 
 // Add services to the container.
 
@@ -22,4 +26,9 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+<<<<<<< Updated upstream
 app.Run();
+=======
+app.Run();
+
+>>>>>>> Stashed changes

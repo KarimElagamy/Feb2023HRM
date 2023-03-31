@@ -1,9 +1,13 @@
+<<<<<<< Updated upstream
 using Authentication.API.Data;
 using Authentication.API.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
+=======
+﻿var builder = WebApplication.CreateBuilder(args);
+>>>>>>> Stashed changes
 
 // Add services to the container.
 
@@ -12,6 +16,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+<<<<<<< Updated upstream
 
 builder.Services.AddDbContext<AuthenticationDbContext>
 (
@@ -23,6 +28,8 @@ builder.Services.AddIdentity<User, Role>()
     .AddEntityFrameworkStores<AuthenticationDbContext>()
     .AddDefaultTokenProviders();
 
+=======
+>>>>>>> Stashed changes
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -38,4 +45,9 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+<<<<<<< Updated upstream
 app.Run();
+=======
+app.Run();
+
+>>>>>>> Stashed changes

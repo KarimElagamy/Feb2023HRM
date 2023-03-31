@@ -1,5 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4DF56920-0EC5-4CF9-BE3D-D334500978FB}"
 	ProjectSection(SolutionItems) = preProject
 		src\Notes.txt = src\Notes.txt
@@ -11,7 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Recruiting", "Recruiting", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OnBoarding", "OnBoarding", "{6E918CCF-2761-4754-8FD5-555AF6047A22}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interviews", "Interviews", "{B582F274-CCE5-4BF0-BE3F-7E1BF79E0678}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Authentication", "Authentication", "{B582F274-CCE5-4BF0-BE3F-7E1BF79E0678}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecruitingWeb", "src\Recruiting\RecruitingWeb\RecruitingWeb.csproj", "{19D01D9B-708C-418B-B6AC-E452EFDCF415}"
 EndProject
@@ -21,6 +22,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "src\Recru
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recruiting.API", "src\Recruiting\Recruiting.API\Recruiting.API.csproj", "{59CBC059-9E4B-46DB-B568-6BEFACE2C349}"
 EndProject
+<<<<<<< Updated upstream
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Authentication", "Authentication", "{66C9A452-9651-4388-AFD6-7CD2B6FBE32D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Authentication.API", "src\Authentication\Authentication.API\Authentication.API.csproj", "{42E5EAE5-B2D7-4873-97FD-37B6797C2FE0}"
@@ -36,6 +38,17 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "src\OnBoarding\Infrastructure\Infrastructure.csproj", "{DC48797A-73BF-4301-B109-EBB931B38EAF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnBoarding.API", "src\OnBoarding\OnBoarding.API\OnBoarding.API.csproj", "{1CFC723A-3341-4065-B04C-9D666965116F}"
+=======
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnBoarding.ApplicationCore", "src\OnBoarding\OnBoarding.ApplicationCore\OnBoarding.ApplicationCore.csproj", "{1777B03C-BD2A-4456-AAD1-076A7E3755DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnBoarding.Infrastructure", "src\OnBoarding\OnBoarding.Infrastructure\OnBoarding.Infrastructure.csproj", "{962FFAC5-3684-4293-A574-92756FE5AD08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnBoarding.API", "src\OnBoarding\OnBoarding.API\OnBoarding.API.csproj", "{AE766437-7BE8-439A-A5B5-A9CA69C794C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Authentication.API", "src\Authentication\Authentication.API\Authentication.API.csproj", "{8332A1DD-44E4-40ED-A7DA-E1310CDF9B62}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{E04A25F8-1D50-4002-9619-5F5DA9D39F93}"
+>>>>>>> Stashed changes
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -50,6 +63,7 @@ Global
 		{21F96699-3F42-4D0B-A1C6-5DA6DD8D82CD} = {A3B7FD8E-2854-4A67-9719-67B057F2AF81}
 		{A566597C-A847-483A-886E-2081EEDD64BB} = {A3B7FD8E-2854-4A67-9719-67B057F2AF81}
 		{59CBC059-9E4B-46DB-B568-6BEFACE2C349} = {A3B7FD8E-2854-4A67-9719-67B057F2AF81}
+<<<<<<< Updated upstream
 		{66C9A452-9651-4388-AFD6-7CD2B6FBE32D} = {4DF56920-0EC5-4CF9-BE3D-D334500978FB}
 		{42E5EAE5-B2D7-4873-97FD-37B6797C2FE0} = {66C9A452-9651-4388-AFD6-7CD2B6FBE32D}
 		{0C9C8CC2-8B52-4BA9-AEDF-790BFF6B8621} = {B582F274-CCE5-4BF0-BE3F-7E1BF79E0678}
@@ -58,6 +72,12 @@ Global
 		{B655B236-E681-4AC2-9E84-CFAB2B484B39} = {6E918CCF-2761-4754-8FD5-555AF6047A22}
 		{DC48797A-73BF-4301-B109-EBB931B38EAF} = {6E918CCF-2761-4754-8FD5-555AF6047A22}
 		{1CFC723A-3341-4065-B04C-9D666965116F} = {6E918CCF-2761-4754-8FD5-555AF6047A22}
+=======
+		{1777B03C-BD2A-4456-AAD1-076A7E3755DB} = {6E918CCF-2761-4754-8FD5-555AF6047A22}
+		{962FFAC5-3684-4293-A574-92756FE5AD08} = {6E918CCF-2761-4754-8FD5-555AF6047A22}
+		{AE766437-7BE8-439A-A5B5-A9CA69C794C7} = {6E918CCF-2761-4754-8FD5-555AF6047A22}
+		{8332A1DD-44E4-40ED-A7DA-E1310CDF9B62} = {B582F274-CCE5-4BF0-BE3F-7E1BF79E0678}
+>>>>>>> Stashed changes
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{19D01D9B-708C-418B-B6AC-E452EFDCF415}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -76,6 +96,7 @@ Global
 		{59CBC059-9E4B-46DB-B568-6BEFACE2C349}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59CBC059-9E4B-46DB-B568-6BEFACE2C349}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59CBC059-9E4B-46DB-B568-6BEFACE2C349}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< Updated upstream
 		{42E5EAE5-B2D7-4873-97FD-37B6797C2FE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{42E5EAE5-B2D7-4873-97FD-37B6797C2FE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42E5EAE5-B2D7-4873-97FD-37B6797C2FE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -104,5 +125,27 @@ Global
 		{1CFC723A-3341-4065-B04C-9D666965116F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1CFC723A-3341-4065-B04C-9D666965116F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1CFC723A-3341-4065-B04C-9D666965116F}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+		{1777B03C-BD2A-4456-AAD1-076A7E3755DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1777B03C-BD2A-4456-AAD1-076A7E3755DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1777B03C-BD2A-4456-AAD1-076A7E3755DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1777B03C-BD2A-4456-AAD1-076A7E3755DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{962FFAC5-3684-4293-A574-92756FE5AD08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{962FFAC5-3684-4293-A574-92756FE5AD08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{962FFAC5-3684-4293-A574-92756FE5AD08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{962FFAC5-3684-4293-A574-92756FE5AD08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE766437-7BE8-439A-A5B5-A9CA69C794C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE766437-7BE8-439A-A5B5-A9CA69C794C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE766437-7BE8-439A-A5B5-A9CA69C794C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE766437-7BE8-439A-A5B5-A9CA69C794C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8332A1DD-44E4-40ED-A7DA-E1310CDF9B62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8332A1DD-44E4-40ED-A7DA-E1310CDF9B62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8332A1DD-44E4-40ED-A7DA-E1310CDF9B62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8332A1DD-44E4-40ED-A7DA-E1310CDF9B62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E04A25F8-1D50-4002-9619-5F5DA9D39F93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E04A25F8-1D50-4002-9619-5F5DA9D39F93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E04A25F8-1D50-4002-9619-5F5DA9D39F93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E04A25F8-1D50-4002-9619-5F5DA9D39F93}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> Stashed changes
 	EndGlobalSection
 EndGlobal
